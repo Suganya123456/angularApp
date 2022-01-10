@@ -1,0 +1,37 @@
+ <!-- <p style="line-height: 35px;font-family: Proxima Regular;font-weight: 800;font-size: 50px;padding: 15px;padding-left: 470px;color: #0071BC;"> Bank Management System</p> -->
+
+<div>
+
+<h2 class="sub-heading pl-30">Login</h2>
+<!-- <form name="yourForm">
+    <input name="name" ng-model="model.name" type="text" required />
+    <div ng-messages="yourForm.name.$error">
+        <div ng-message="required">Name is required!</div>
+    </div>
+    <button ng-click="send()">Send</button>
+</form> -->
+
+<form name="loginForm" class="pl-30">
+    <div class="form-group ">
+        <label for="username">Username</label>
+        <!-- <input type="text" required formControlName="username" [(ngModel)]="username"  (ngModelChange)="onTextChange($event)" 
+         class="form-control input-size" /> -->
+         <input type="text" required formControlName="username"  
+         class="form-control input-size" />
+    </div>
+
+    <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" required formControlName="password" class="form-control input-size" />
+    </div>
+    <div class="form-group">
+        <!-- <button type="submit" class="btn btn-primary" [(ngModel)]="username.username" (click)="validateUser()" >Submit</button> -->
+        <button type="submit" class="btn btn-primary" (click)="goToHome()" >Submit</button>
+
+        <button type="submit1" class="btn btn-primary margin-left" (click)="register()" >Register</button>
+    </div>
+    <div>
+        <p>New User? Click on the above Register button for Registration.</p>
+    </div>
+</form>
+</div>
